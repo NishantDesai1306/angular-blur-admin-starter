@@ -1,4 +1,4 @@
-# angular-sb-admin-starter
+# angular-blur-admin-starter
 An AngularJS project with [Blue-Admin](http://akveo.com/blur-admin-mint/) theme intergrated with it
 
 Steps to start using this project
