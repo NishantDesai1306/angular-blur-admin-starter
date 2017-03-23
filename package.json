@@ -25,7 +25,9 @@
     "grunt-include-source": "^1.0.0",
     "grunt-parallel": "^0.5.1",
     "grunt-usemin": "^3.1.1",
-    "grunt-wiredep": "^3.0.1"
+    "grunt-wiredep": "^3.0.1",
+    "ng-dependencies": "^0.8.1",
+    "toposort": "^1.0.3"
   },
   "dependencies": {
     "express": "^4.14.1"
