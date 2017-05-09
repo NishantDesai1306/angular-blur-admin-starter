@@ -85,19 +85,19 @@ module.exports = function(grunt) {
             initial: ["dist"],
             postDist: [
                 "dist/app/maps/",
-                "dist/app/pages/", 
+                "dist/app/pages/",
                 "dist/app/templates/",
-                "dist/app/theme/", 
-                "dist/app/app.js", 
+                "dist/app/theme/",
+                "dist/app/app.js",
                 "dist/bower_components/**"
-            ] 
+            ]
         },
         express: {
             all: {
                 options: {
-                    port: 9000,
+                    port: 3000,
                     hostname: 'localhost',
-                    'bases': ['dist'],
+                    'bases': ['dist', '.'],
                     livereload: true
                 }
             }
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('build', [
-        'useminPrepare', 
+        'useminPrepare',
         'concat',
         'cssmin',
         'uglify',
