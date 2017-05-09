@@ -8,9 +8,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-angular-file-loader');
     grunt.loadNpmTasks('grunt-html2js');
+    grunt.loadNpmTasks('grunt-express-server');
 
     grunt.initConfig({
         appConfig: {
@@ -24,6 +24,12 @@ module.exports = function(grunt) {
         watch: {
             options: {
                 livereload: true
+            },
+            html: {
+                files: [
+                    'app/**/*.html',
+                ],
+                tasks: ['default']
             },
             js: {
                 files: [
@@ -93,12 +99,9 @@ module.exports = function(grunt) {
             ]
         },
         express: {
-            all: {
+            dev: {
                 options: {
-                    port: 3000,
-                    hostname: 'localhost',
-                    'bases': ['dist', '.'],
-                    livereload: true
+                    script: './server.js'
                 }
             }
         },

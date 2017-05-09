@@ -20,7 +20,7 @@
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-uglify": "^2.1.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-express": "^1.4.1",
+    "grunt-express-server": "^0.5.3",
     "grunt-html2js": "^0.3.8",
     "grunt-include-source": "^1.0.0",
     "grunt-parallel": "^0.5.1",
